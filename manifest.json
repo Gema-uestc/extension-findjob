@@ -1,0 +1,27 @@
+{
+// 必须的字段
+  "name": "findjob",
+  "version": "0.1",
+  "manifest_version": 2,
+  // 建议提供的字段
+  "description": "实习",
+  "icons": { 
+    "16": "icons/icon16.png",             
+    "48": "icons/icon48.png",            
+    "128": "icons/icon128.png" 
+  },
+  "browser_action": {
+    "default_icon": "icons/StatusIcon.png", // optional 
+    "default_title": "实习信息",   // optional; shown in tooltip 
+    "default_popup": "popup.html",       // optional 
+    "scripts": ["js/jquery.min.js","js/bootstrap.min.js","js/pop/popup.js"]
+  },
+
+
+
+ "permissions": [
+    "http://*/",
+    "http://www.shixiseng.com/interns?k=%E5%89%8D%E7%AB%AF&c=%E5%85%A8%E5%9B%BD&s=0,0&d=&m=&x=&t=zh&ch=&p=1"
+  ]
+  
+}  
